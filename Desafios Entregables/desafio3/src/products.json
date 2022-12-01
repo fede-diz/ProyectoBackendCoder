@@ -1,0 +1,12 @@
+[
+    {"id":1,"title":"Samsung S20","price":"1100","thumbnail":"Sin Imagen","code":"a1","stock":"20"},
+    {"id":2,"title":"Nokia 1100","price":"20000","thumbnail":"Sin Imagen","code":"b2","stock":"15"},
+    {"id":3,"title":"iPad 8va Generacion","price":"700","thumbnail":"Sin Imagen","code":"c3","stock":"22"},
+    {"id":4,"title":"Notebook Omen 17","price":"1500","thumbnail":"Sin Imagen","code":"d4","stock":"30"},
+    {"id":5,"title":"iPhone 13 Pro Max","price":"1000","thumbnail":"Sin Imagen","code":"e5","stock":"10"},
+    {"id":6,"title":"Termo Stanley 1L","price":"100","thumbnail":"Sin Imagen","code":"f6","stock":"18"},
+    {"id":7,"title":"Mouse Genius","price":"50","thumbnail":"Sin Imagen","code":"g7","stock":"4"},
+    {"id":8,"title":"Yerba Playadito 1kg","price":"10","thumbnail":"Sin Imagen","code":"h8","stock":"11"},
+    {"id":9,"title":"Kindle Paperwhite","price":"350","thumbnail":"Sin Imagen","code":"i9","stock":"26"},
+    {"id":10,"title":"TV Sony 80 Pulgadas","price":"2500","thumbnail":"Sin Imagen","code":"j10","stock":"9"}
+]

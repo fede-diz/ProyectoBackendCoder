@@ -74,8 +74,7 @@ class ProductManager {
                 code: code ?? productToUpdate.code,
                 stock: stock ?? productToUpdate.stock,
             }
-            products.splice(productIndex, 1)
-            products.push(updatedProduct)
+            products.splice(productIndex, 1, updatedProduct)
                 
             return fs.promises.writeFile(this.path, JSON.stringify(products))
         }
@@ -100,8 +99,8 @@ class ProductManager {
     }
 }
 
-    async function run() {
-    const productManager = new ProductManager('./products.json', './codes.json', './ids.json')
+async function run() {
+    const productManager = new ProductManager('./products.json')
 
     console.log("-------------------[Array Inicial]--------------------");
     console.log(await productManager.getProducts());
