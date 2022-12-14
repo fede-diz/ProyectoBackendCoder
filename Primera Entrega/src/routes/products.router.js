@@ -29,9 +29,10 @@ router.post('/', async (req, res) => {
 
     if (!product) {
         return res.status(404).json({status: "error", error: "Product Duplicated"})
+    } else {
+        if (product === "Fail") res.json({status: 'error', message: 'Missing object parameters'})
+        else res.json({status: 'success', message: 'Product added!', product: product})
     }
-
-    res.json({status: 'success', message: 'Product added!', product: product})
 })
 
 router.put('/:pid', async (req, res) => {

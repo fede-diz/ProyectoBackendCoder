@@ -32,12 +32,22 @@ class ProductsManager {
         return productById ?? "Not Found"
     }
 
-    addProduct = async (object) => {
+    addProduct = async (title, description, code, price, status, stock, category, thumbnail) => {
         const products = await this.getProducts()
         const id = await this.getNextID()
+        
+        if (!title || !description || !code || !Number.isInteger(price) || !Number.isInteger(stock) || !category) return "Fail"
+    
         const product = {
             id,
-            ...object
+            title, 
+            description,
+            code,
+            price,
+            status: status ? status : true,
+            stock,
+            category,
+            thumbnail: thumbnail ? thumbnail : []
         }
 
         const codes = products.map(prod => prod.code);
@@ -49,7 +59,6 @@ class ProductsManager {
             await this.writeFile(products)  
             return product
         }
-       
     }
 
     updateProduct = async (id, object) => {
